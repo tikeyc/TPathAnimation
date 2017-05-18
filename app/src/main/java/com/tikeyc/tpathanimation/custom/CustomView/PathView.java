@@ -134,7 +134,7 @@ public class PathView extends RelativeLayout {
         for (int i = count - 1 ; i >= 0; --i) {
             TPathIcon pathIcon = pathIcons.get(i);
             pathIcon.setVisibility(INVISIBLE);
-            long duration = 800;
+            long duration = 2000;
             long startDelay = (count - 1 - i) * (duration/count);
             pathIcon.startAnimatorPath(duration - startDelay,startDelay);
 
