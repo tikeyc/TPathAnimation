@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_bg"
+    tools:context="com.tikeyc.tpathanimation.avtivity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tikeyc.tpathanimation.custom.CustomView.PathView
+            android:id="@+id/pathView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/startAnimation_button"
+        android:text="点击开启动画"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40px"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp" />
+</RelativeLayout>

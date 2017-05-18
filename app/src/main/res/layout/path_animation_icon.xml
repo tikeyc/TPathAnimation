@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tikeyc.tpathanimation.custom.CustomView.TPathIcon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp">
+
+
+    <ImageView
+        android:id="@+id/icon_image"
+        android:src="@mipmap/test1"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/icon_title"
+        android:layout_marginLeft="10dp"
+        android:text="test1"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</com.tikeyc.tpathanimation.custom.CustomView.TPathIcon>
+
