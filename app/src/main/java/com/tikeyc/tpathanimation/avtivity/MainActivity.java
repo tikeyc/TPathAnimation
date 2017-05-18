@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import com.tikeyc.tpathanimation.R;
 import com.tikeyc.tpathanimation.custom.CustomView.PathView;
+import com.tikeyc.tpathanimation.custom.CustomView.TPathIcon;
 
 import java.util.ArrayList;
 
@@ -23,6 +25,17 @@ public class MainActivity extends Activity {
 
 
         initView();
+
+        setListen();
+    }
+
+    private void setListen() {
+        pathView.addPathIconClickListener(new PathView.TPathIconClickListen() {
+            @Override
+            public void onPathIconClick(TPathIcon pathIcon) {
+                Log.e("TAG","onPathIconClick:" + pathIcon.getTag());
+            }
+        });
     }
 
 
